@@ -19,4 +19,6 @@ jobs:
           node-version: 14
 
       - name: Run login script
-        run: node login.js
+        run: |
+          npm install puppeteer
+          node login.js
