@@ -1,17 +1,7 @@
-const { execSync } = require('child_process');
-
-// 安装 puppeteer 依赖
-try {
-  execSync('npm install puppeteer');
-} catch (error) {
-  console.error('安装 puppeteer 失败:', error);
-  process.exit(1);
-}
-
 const puppeteer = require('puppeteer');
 
 async function login(username, password) {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
 
   // 导航到登录页面
