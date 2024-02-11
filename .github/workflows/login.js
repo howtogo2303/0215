@@ -35,11 +35,11 @@ async function login(username, password) {
 
 // 定义多个账号
 const accounts = [
-  { username: 'username1', password: 'password1' },
-  { username: 'username2', password: 'password2' },
-  { username: 'username3', password: 'password3' },
-  { username: 'username4', password: 'password4' },
-  { username: 'username5', password: 'password5' },
+  { username: 'cool@tzhy.tk', password: '123123123aA@@@' },
+  { username: 'ggg12345@zjtz.tk', password: '1234512345aA@@' },
+  { username: 'bbbb123@tzhy.tk', password: '123123123aA@@@' },
+  { username: 'yyyyopopop@gmail.com', password: '12351235aW@@' },
+  { username: 'free123@ttt0090.tk', password: '1235812358aA@' },
 ];
 
 // 使用每个账号登录
