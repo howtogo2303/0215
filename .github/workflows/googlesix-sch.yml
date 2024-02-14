@@ -1,7 +1,7 @@
 name: winsix-sch
 on:
   schedule:
-    - cron: '38 */6 * * *' # Run every day at midnight
+    - cron: '38 */7 * * *' # Run every day at midnight
 jobs:
   build:
 
@@ -53,7 +53,7 @@ jobs:
         $current_time = Get-Date -Format "yyyyMMddHHmmss"
         $file_name = "$current_time.txt"
         $public_url | Out-File -FilePath "wwww/$file_name"
-        Copy-Item -Path "D:\a\cccc\cccc\*.txt" -Destination "wwww"
+        Copy-Item -Path "D:\a\0215\0215\*.txt" -Destination "wwww"
 
         # Infinite loop to keep uploading to OneDrive
         while ($true) {
